@@ -6,9 +6,9 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <p class="page-header__logo">
         <img src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение «Пинк»">
-      </a>
+      </p>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -53,17 +53,21 @@
             </p>
           </header>
           <ul class="download__list">
-            <div class="download__item">
-              <li class="dowmload-apple">
+            <li class="download__item-apple">
+              <a class="download__link" href="https://www.apple.com/ru/app-store/">
                 <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
-              </li>
-              <li class="download-android">
+              </a>
+            </li>
+            <li class="download__item-android">
+              <a class="download__link" href="https://play.google.com/store?hl=ru&gl=US">
                 <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android">
-              </li>
-              <li class="download-microsoft">
+              </a>
+            </li>
+            <li class="download__item-microsoft">
+              <a clas="download__link" href="https://www.microsoft.com/ru-RU/store/apps">
                 <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
-              </li>
-            </div>
+              </a>
+            </li>
           </ul>
           <p class="download__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -92,29 +96,29 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы о нас</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <strong class="reviews__author-name">Николай Петров</strong>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="slider__wrapper slider">
+          <h2 class="slider__title">Отзывы о нас</h2>
+          <div class="slider__list">
+            <blockquote class="slider__item">
+              <div class="slider__author-info">
+                <strong class="slider__author-name">Николай Петров</strong>
+                <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <strong class="reviews__author-name">Николай Петров</strong>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <blockquote class="slider__item">
+              <div class="slider__author-info">
+                <strong class="slider__author-name">Николай Петров</strong>
+                <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <strong class="reviews__author-name">Николай Петров</strong>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <blockquote class="slider__item">
+              <div class="slider__author-info">
+                <strong class="slider__author-name">Николай Петров</strong>
+                <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
+          <p class="slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -187,7 +191,7 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Пишите:</h3>
-              <a class="contacts__mail" href="#">mail@htmlacademy.ru</a>
+              <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
@@ -208,18 +212,18 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy">Twitter</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Twitter</a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademy">Youtube</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Youtube</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип академии">
           </a>
