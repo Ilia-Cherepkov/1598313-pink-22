@@ -7,10 +7,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  align-content: start;
 }
 
 .download__wrapper {
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .download__slogan {
@@ -33,4 +47,10 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+  justify-self: start;
+}
+
+.download__header {
+  justify-self: end;
+  order: 2;
 }
