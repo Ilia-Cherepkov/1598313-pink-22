@@ -47,8 +47,8 @@
             шанс выиграть ценный приз — 1000
             миль на вашу бонусную карту!
           </p>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <div class="info">
+          <form class="form__grid" action="https://echo.htmlacademy.ru/courses" method="post">
+            <div class="info__data info">
               <div class="info__block">
                 <label class="info__text" for="surname">Фамилия:</label>
                 <input class="info__field" id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
@@ -64,32 +64,34 @@
             </div>
             <fieldset class="achievement">
               <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
-              <div class="achievement__block">
-                <input class="achievement__choice" type="checkbox" name ="choice" value="selfie" id="selfie" checked>
-                <label class="achievement__description" for="selfie">Сделал селфи с акулой</label>
-              </div>
-              <div class="achievement__block">
-                <input class="achievement__choice" type="checkbox" name ="choice" value="beach" id="beach" checked>
-                <label class="achievement__description" for="beach">Обгорел на пляже</label>
-              </div>
-              <div class="achievement__block">
-                <input class="achievement__choice" type="checkbox" name ="choice" value="chuck" id="chuck">
-                <label class="achievement__description" for="chuck">Видел Чака Норриса</label>
-              </div>
-              <div class="achievement__block">
-                <input class="achievement__choice" type="checkbox" name ="choice" value="souvenir" id="souvenir">
-                <label class="achievement__description" for="souvenir">Накупил сувениров</label>
-              </div>
-              <div class="achievement__block">
-                <input class="achievement__choice" type="checkbox" name ="choice" value="tower" id="tower" checked>
-                <label class="achievement__description" for="tower">Удержал башню</label>
-              </div>
-              <div class="achievement__block">
-                <input class="achievement__choice" type="checkbox" name ="choice" value="hotel" id="hotel">
-                <label class="achievement__description" for="hotel">Разгромил отель</label>
+              <div class="achievement__group">
+                <div class="achievement__block">
+                  <input class="achievement__choice" type="checkbox" name ="choice" value="selfie" id="selfie" checked>
+                  <label class="achievement__description" for="selfie">Сделал селфи с акулой</label>
+                </div>
+                <div class="achievement__block">
+                  <input class="achievement__choice" type="checkbox" name ="choice" value="beach" id="beach" checked>
+                  <label class="achievement__description" for="beach">Обгорел на пляже</label>
+                </div>
+                <div class="achievement__block">
+                  <input class="achievement__choice" type="checkbox" name ="choice" value="chuck" id="chuck">
+                  <label class="achievement__description" for="chuck">Видел Чака Норриса</label>
+                </div>
+                <div class="achievement__block">
+                  <input class="achievement__choice" type="checkbox" name ="choice" value="souvenir" id="souvenir">
+                  <label class="achievement__description" for="souvenir">Накупил сувениров</label>
+                </div>
+                <div class="achievement__block">
+                  <input class="achievement__choice" type="checkbox" name ="choice" value="tower" id="tower" checked>
+                  <label class="achievement__description" for="tower">Удержал башню</label>
+                </div>
+                <div class="achievement__block">
+                  <input class="achievement__choice" type="checkbox" name ="choice" value="hotel" id="hotel">
+                  <label class="achievement__description" for="hotel">Разгромил отель</label>
+                </div>
               </div>
             </fieldset>
-            <div class="info">
+            <div class="info__contacts info">
               <div class="contacts">
                 <label class="contacts__text" for="phone">Номер телефона</label>
                 <input class="contacts__field" id="phone" type="number" name="phone" placeholder="Номер, пожалуйста">
