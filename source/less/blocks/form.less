@@ -1,3 +1,14 @@
+.form__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.form__helper,
+.form__field-textarea {
+  text-align: left;
+}
+
 .form__grid {
   @media (min-width: @tablet-width) {
     display: grid;
@@ -10,4 +21,220 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 200px 250px 250px 60px;
   }
+}
+
+.form__field {
+  text-align: left;
+}
+
+.form__field-title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @basic-pink;
+  text-transform: uppercase;
+}
+
+.form__helper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form__helper--data {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.form__helper--contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.form__field-input {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  border: 2px solid @light-grey;
+  padding-left: 20px;
+  padding-right: 78px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: @dark-blue;
+}
+
+.form__helper--app {
+  border: none;
+  background-color: @basic-grey;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.form__radio-label {
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  color: @dark-blue;
+  margin-bottom: 60px;
+}
+
+.form__radio-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 80px;
+  }
+}
+
+.form__button {
+  background-color: @basic-green;
+  border: 2px solid @basic-green;
+  width: 276px;
+  height: 59px;
+  color: @basic-white;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
+
+.form__helper--progress {
+  border: none;
+  background-color: @basic-grey;
+  min-height: 604px;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.form__group-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @basic-pink;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.form__choice {
+  text-align: left;
+  margin-bottom: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 80px;
+  }
+}
+
+.form__checkbox-label {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @dark-blue;
+}
+
+.form__group {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__field-textarea {
+  border: 2px solid @light-grey;
+  min-height: 97px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  border-radius: 1px;
+  padding-left: 20px;
+  padding-right: 25px;
+  padding-top: 22px;
+}
+
+.form__helper-textrarea {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.form__obligatory {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
 }
