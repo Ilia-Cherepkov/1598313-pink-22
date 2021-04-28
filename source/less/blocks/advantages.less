@@ -8,11 +8,17 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row-reverse;
   }
 }
 
 .advantages__list {
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .advantages__title {
@@ -24,4 +30,22 @@
 .advantages__description {
   font-size: 14px;
   line-height: 24px;
+}
+
+.advantages__phone {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__phone-desktop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 }
