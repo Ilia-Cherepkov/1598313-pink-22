@@ -12,13 +12,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 550px 400px 400px 400px;
+    grid-template-rows: 630px 455px 455px 455px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 550px 400px 400px;
+    grid-template-rows: 602px 555px 555px;
   }
 }
 
@@ -26,15 +26,20 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  display: block;
 }
 
 .catalog__item {
-  background-color: @basic-grey;
+  /*background-color: @basic-grey;*/
   margin-bottom: 20px;
   min-width: 280px;
 
   @media (min-width: @tablet-width) {
     min-width: 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 50px;
   }
 }
 
@@ -43,7 +48,14 @@
 }
 
 .catalog__description {
+  width: 280px;
   text-align: left;
+  background-color: @basic-grey;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 
 .catalog__quantity {
@@ -81,4 +93,67 @@
     grid-row-start: 1;
     grid-row-end: 2;
   }
+}
+
+.catalog__editor-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__editor-item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.catalog__editor-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.catalog__editor-button {
+  border: none;
+}
+
+.catalog__range--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.catalog__range--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.catalog__editor-send {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @basic-pink;
+  border: 3px solid @basic-pink;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 19px 90px;
+}
+
+.catalog__editor-reset {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @dark-blue;
+  opacity: 0.1;
+  border: 3px solid @dark-blue;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 19px 90px;
 }
