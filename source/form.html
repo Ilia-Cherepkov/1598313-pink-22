@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
       <p class="page-header__logo page-header__logo--closed">
-        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение «Пинк»">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 700px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" alt="Приложение «Пинк»">
+        </picture>
       </p>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -131,7 +139,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="img/footer-logotype.svg" width="145" height="40" alt="Логотип приложения">
+          <img src="img/footer-logotype.svg" srcset="img/footer-logotype.svg, img/footer-logotype@2x.svg 2x" alt="Логотип приложения">
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -161,7 +169,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип академии">
+            <img src="img/html-academy-logo.svg" srcset="img/html-academy-logo.svg, img/html-academy-logo@2x.svg 2x" alt="Логотип академии">
           </a>
         </div>
       </div>
