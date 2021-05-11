@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
       <p class="page-header__logo page-header__logo--closed">
-        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение «Пинк»">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 700px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" alt="Приложение «Пинк»">
+        </picture>
       </p>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -46,7 +54,11 @@
           <p class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           <ul class="catalog__list">
             <li class="catalog__item catalog__item-panorama">
-              <img src="img/panorama-foto.jpg" width="320" height="137" alt="Фото панорамы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img src="img/panorama-foto.jpg" srcset="img/panorama-foto.jpg, img/panorama-foto.jpg@2x.svg 2x" alt="Фото панорамы">
+              </picture>
               <div class="catalog__description">
                 <span class="catalog__name">Анна</span><span class="catalog__addition">(5 минут назад)</span>
                 <p class="catalog__text">
@@ -61,7 +73,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img src="img/car-foto.jpg" width="280" height="180" alt="Фото машины">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/car-foto.jpg" srcset="img/car-foto.jpg, img/car-foto.jpg@2x.svg 2x" alt="Фото машины">
+              </picture>
               <div class="catalog__description">
                 <span class="catalog__name">Левон</span><span class="catalog__addition">(5 часов назад)</span>
                 <p class="catalog__text">
@@ -76,7 +92,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img src="img/drums-foto.jpg" width="280" height="180" alt="Фото барабанов">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/drums-foto.jpg" srcset="img/drums-foto.jpg, img/drums-foto.jpg@2x.svg 2x" alt="Фото барабанов">
+              </picture>
               <div class="catalog__description">
                 <span class="catalog__name">Антон</span><span class="catalog__addition">(12 часов назад)</span>
                 <p class="catalog__text">
@@ -91,7 +111,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img src="img/sky-foto.jpg" width="280" height="180" alt="Фото неба">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/sky-foto.jpg" srcset="img/sky-foto.jpg, img/sky-foto.jpg@2x.svg 2x" alt="Фото неба">
+              </picture>
               <div class="catalog__description">
                 <span class="catalog__name">Борис</span><span class="catalog__addition">(20 часов назад)</span>
                 <p class="catalog__text">
@@ -106,7 +130,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img src="img/kuban-foto.jpg" width="280" height="180" alt="Фото кубанской бахчи">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/kuban-foto.jpg" srcset="img/kuban-foto.jpg, img/kuban-foto.jpg@2x.svg 2x" alt="Фото кубанской бахчи">
+              </picture>
               <div class="catalog__description">
                 <span class="catalog__name">Сергей</span><span class="catalog__addition">(25 часов назад)</span>
                 <p class="catalog__text">
@@ -121,7 +149,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img src="img/mountains-foto.jpg" width="280" height="180" alt="Фото гор">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <img src="img/mountains-foto.jpg" srcset="img/mountains-foto.jpg, img/mountains-foto.jpg@2x.svg 2x" alt="Фото гор">
+              </picture>
               <div class="catalog__description">
                 <span class="catalog__name">Максим</span><span class="catalog__addition">(40 часов назад)</span>
                 <p class="catalog__text">
@@ -136,7 +168,11 @@
               </div>
             </li>
             <li class="catalog__item">
-              <img src="img/plane-foto.jpg" width="280" height="180" alt="Фото из иллюминатора самолета">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 700px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <img src="img/plane-foto.jpg" srcset="img/plane-foto.jpg, img/plane-foto.jpg@2x.svg 2x" alt="Фото из иллюминатора самолета">
+              </picture>
               <div class="catalog__description">
                 <span class="catalog__name">Надежда</span><span class="catalog__addition">(45 часов назад)</span>
                 <p class="catalog__text">
@@ -156,7 +192,11 @@
       </section>
       <section class="catalog__editor">
         <div class="catalog__editor-wrapper">
-          <img src="img/snow-foto.jpg" width="280" height="374" alt="Фото заснеженной дороги">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+            <img src="img/snow-foto.jpg" srcset="img/snow-foto.jpg, img/plane-foto.jpg@2x.svg 2x" alt="Фото заснеженной дороги">
+          </picture>
           <form class="catalog__editor-list" action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="catalog__editor-flex">
               <div class="catalog__editor-item">
@@ -196,7 +236,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="img/footer-logotype.svg" width="145" height="40" alt="Логотип приложения">
+          <img src="img/footer-logotype.svg" srcset="img/footer-logotype.svg, img/footer-logotype@2x.svg 2x" alt="Логотип приложения">
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -226,7 +266,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип академии">
+            <img src="img/html-academy-logo.svg" srcset="img/html-academy-logo.svg, img/html-academy-logo@2x.svg 2x" alt="Логотип академии">
           </a>
         </div>
       </div>
