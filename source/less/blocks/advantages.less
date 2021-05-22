@@ -1,6 +1,11 @@
 .advantages {
   color: @basic-black;
   background-color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 59px;
+    position: relative;
+  }
 }
 
 .advantages__wrapper {
@@ -18,6 +23,26 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-around;
+    position: relative;
+    right: 300px;
+  }
+}
+
+.advantages__item {
+  @media (min-width: @desktop-width) {
+    padding-left: 50px;
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(2) {
+      padding-left: 70px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 70px;
+    }
   }
 }
 
@@ -25,11 +50,23 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    width: 240px;
+  }
 }
 
 .advantages__description {
   font-size: 14px;
   line-height: 24px;
+  width: 252px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .advantages__phone {
@@ -47,5 +84,28 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
+  }
+}
+
+.advantages__phone-pink {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    position: absolute;
+    left: 700px;
+    top: 56px;
+
+    &:nth-child(4) {
+      left: 990px;
+    }
+
+    &:nth-child(5) {
+      left: 670px;
+    }
+
+    &:nth-child(6) {
+      left: 350px;
+    }
   }
 }
